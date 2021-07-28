@@ -24,7 +24,7 @@ if(CUDA_FOUND)
   -gencode;arch=compute_30,code=sm_30;  
   -gencode;arch=compute_35,code=sm_35;
   -gencode;arch=compute_35,code=compute_35;
-  -gencode;arch=compute_50,code=compute_50;")
+  -gencode;arch=compute_50,code=sm_50;")
 
   # add -Wextra compiler flag for gcc compilations
   if (UNIX)
