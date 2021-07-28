@@ -21,7 +21,12 @@ if(CUDA_FOUND)
   # to make sure more people can easily run class code without knowing 
   # about this compiler argument
   set(CUDA_NVCC_FLAGS "
-  -gencode;arch=compute_51,code=sm_51;")
+  -gencode=arch=compute_52,code=sm_52;
+  -gencode=arch=compute_60,code=sm_60;
+  -gencode=arch=compute_61,code=sm_61;
+  -gencode=arch=compute_70,code=sm_70;
+  -gencode=arch=compute_75,code=sm_75;
+  -gencode=arch=compute_75,code=compute_75")
 
   #-gencode;arch=compute_30,code=sm_30;  
   #-gencode;arch=compute_35,code=sm_35;
